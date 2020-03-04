@@ -182,6 +182,49 @@ db.Execute ("create table Stock(Symbol varchar(100) not null)");
 db.Execute ("insert into Stock(Symbol) values (?)", "MSFT");
 var stocks = db.Query<Stock> ("select * from Stock");
 ```
+## SQLite 3 Direct Acces
+If you want you can acces the SQLite 3 funcions directly from CsharpSQLite abstraction. Here is an example:
+
+```csharp
+SQLiteConnection con = new SQLiteConnection();
+
+string dbFilename = @"SqliteTest3.db";
+string cs = string.Format("Version=3;uri=file:{0}", dbFilename);
+
+if(File.Exists(dbFilename))
+	File.Delete(dbFilename);
+
+con.ConnectionString = cs;
+con.Open();
+
+IDbCommand cmd = con.CreateCommand();
+cmd.CommandText = "CREATE TABLE TEST_TABLE ( COLA INTEGER, COLB TEXT, COLC DATETIME )";
+cmd.ExecuteNonQuery();
+
+cmd.CommandText = "INSERT INTO TEST_TABLE ( COLA, COLB, COLC ) VALUES (123,'ABC','2008-12-31 18:19:20' )";
+cmd.ExecuteNonQuery();
+
+cmd.CommandText = "INSERT INTO TEST_TABLE ( COLA, COLB, COLC ) VALUES (124,'DEF', '2009-11-16 13:35:36' )";
+cmd.ExecuteNonQuery();
+
+cmd.CommandText = "SELECT COLA, COLB, COLC FROM TEST_TABLE";
+IDataReader reader = cmd.ExecuteReader();
+int r = 0;
+while(reader.Read())
+{
+	int i = reader.GetInt32(reader.GetOrdinal("COLA"));
+
+	string s = reader.GetString(reader.GetOrdinal("COLB"));
+
+	DateTime dt = reader.GetDateTime(reader.GetOrdinal("COLC"));
+
+	r++;
+}
+con.Close();
+con = null;
+```
+## Want More???
+Please check the SQLiteClientTeste to see much more samples!
 
 ## Thank you!
 
