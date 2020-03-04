@@ -11,6 +11,7 @@
     <RootNamespace>SQLiteClientTests</RootNamespace>
     <AssemblyName>SQLiteClientTests</AssemblyName>
     <StartupObject>SQLiteClientTests.SQLiteClientTestDriver</StartupObject>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLiteClientTestDriver.cs" />
+    <Compile Include="SQLiteToolsTesteDrive.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

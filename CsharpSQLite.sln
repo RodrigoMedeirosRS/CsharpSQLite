@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5DE3C678
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteClientTests", "Tests\SQLiteClientTests\SQLiteClientTests.csproj", "{B83741E9-7012-491E-B15D-3B083506A143}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite.Tests", "Tests\System.Data.SQLite.Tests\System.Data.SQLite.Tests.csproj", "{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite.UnitTests", "Tests\System.Data.SQLite.UnitTests\System.Data.SQLite.UnitTests.csproj", "{59E27BF3-3D31-42E5-BA21-FAEE135E699F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Data.SQLite.Benchmark", "System.Data.SQLite.Benchmark\System.Data.SQLite.Benchmark.csproj", "{206175B1-9C0B-40D7-8859-09B6F3A6B1B5}"
@@ -35,14 +33,9 @@ Global
 		{F1653F20-D47D-4F29-8C55-3C835542AF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1653F20-D47D-4F29-8C55-3C835542AF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1653F20-D47D-4F29-8C55-3C835542AF5F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B83741E9-7012-491E-B15D-3B083506A143} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
-		{F3C729A0-E4B1-493B-8F9B-8DDE1A5092AD} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
 		{59E27BF3-3D31-42E5-BA21-FAEE135E699F} = {5DE3C678-AF97-4E2D-A831-D8B1F782993D}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
@@ -87,20 +80,29 @@ Global
 		$2.MethodDeclarationParameterWrapping = DoNotWrap
 		$2.IndexerDeclarationParameterWrapping = DoNotWrap
 		$2.IndexerArgumentWrapping = DoNotWrap
-		$2.inheritsSet = Mono
-		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
+		$2.IndentSwitchSection = False
+		$2.NewLinesForBracesInProperties = False
+		$2.NewLinesForBracesInAccessors = False
+		$2.NewLinesForBracesInAnonymousMethods = False
+		$2.NewLinesForBracesInControlBlocks = False
+		$2.NewLinesForBracesInAnonymousTypes = False
+		$2.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$2.NewLinesForBracesInLambdaExpressionBody = False
+		$2.NewLineForElse = False
+		$2.NewLineForCatch = False
+		$2.NewLineForFinally = False
+		$2.NewLineForMembersInObjectInit = False
+		$2.NewLineForMembersInAnonymousTypes = False
+		$2.NewLineForClausesInQuery = False
+		$2.SpacingAfterMethodDeclarationName = True
+		$2.SpaceAfterMethodCallName = True
+		$2.SpaceBeforeOpenSquareBracket = True
 		$0.TextStylePolicy = $3
-		$3.FileWidth = 120
-		$3.TabsToSpaces = False
-		$3.inheritsSet = VisualStudio
-		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 		$0.TextStylePolicy = $4
 		$4.inheritsSet = null
 		$4.scope = text/x-changelog
 		$0.StandardHeader = $5
-		$5.Text = 
-		$5.IncludeInNewFiles = True
 	EndGlobalSection
 EndGlobal

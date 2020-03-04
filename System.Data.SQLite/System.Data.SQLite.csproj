@@ -9,6 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>System.Data.SQLite</RootNamespace>
     <AssemblyName>System.Data.SQLite</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -19,7 +20,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <NoWarn>0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <NoWarn>0168;0169;0414;0618;0649;0219;0162;0429;1591</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>True</Optimize>
@@ -28,7 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <NoWarn>0168;0169;0414;0618;0649;0219;0162;0429</NoWarn>
+    <NoWarn>0168;0169;0414;0618;0649;0219;0162;0429;1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src\alter_c.cs" />
@@ -135,12 +136,37 @@
     <Compile Include="Client\SQLiteRowUpdatingEventHandler.cs" />
     <Compile Include="Client\SQLiteTransaction.cs" />
     <Compile Include="Client\SQLiteConvert.cs" />
+    <Compile Include="Tools\SQLiteException.cs" />
+    <Compile Include="Tools\NotNullConstraintViolationException.cs" />
+    <Compile Include="Tools\Enum.cs" />
+    <Compile Include="Tools\SQLiteConnection.cs" />
+    <Compile Include="Tools\NotifyTableChangedEventArgs.cs" />
+    <Compile Include="Tools\SQLiteConnectionString.cs" />
+    <Compile Include="Tools\Atributes.cs" />
+    <Compile Include="Tools\TableMapping.cs" />
+    <Compile Include="Tools\EnumCacheInfo.cs" />
+    <Compile Include="Tools\EnumCache.cs" />
+    <Compile Include="Tools\Orm.cs" />
+    <Compile Include="Tools\SQLiteCommand.cs" />
+    <Compile Include="Tools\PreparedSqlLiteInsertCommand.cs" />
+    <Compile Include="Tools\CreateTablesResult.cs" />
+    <Compile Include="Tools\BaseTableQuery.cs" />
+    <Compile Include="Tools\TableQuery.cs" />
+    <Compile Include="Tools\SQLite3.cs" />
+    <Compile Include="Tools\Async\SQLiteAsyncConnection.cs" />
+    <Compile Include="Tools\Async\AsyncTableQuery.cs" />
+    <Compile Include="Tools\Async\SQLiteConnectionPool.cs" />
+    <Compile Include="Tools\Async\SQLiteConnectionWithLock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tools\" />
+    <Folder Include="Tools\Async\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

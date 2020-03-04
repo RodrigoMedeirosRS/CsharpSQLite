@@ -1061,8 +1061,14 @@ namespace SQLiteClientTests
 			Console.WriteLine("Test Done.");
 		}
 
+
+
 		public static int Main(string[] args)
 		{
+			SQLiteToolsTesteDrive sqliteTools = new SQLiteToolsTesteDrive();
+
+			sqliteTools.Executar();
+
 			int Test = 1;
 			var tests = new SQLiteClientTestDriver();
 

@@ -1,6 +1,5 @@
 using System.IO;
 using System.Diagnostics;
-using Xunit;
 using System.Data.SQLite;
 using System.Data.SQLite.Benchmark;
 
@@ -53,7 +52,6 @@ namespace Community.CsharpSQLite.UnitTests
 		private const string INSERT_Command =
             "INSERT INTO Root VALUES (?,?)";
 
-		[Fact]
 		public void InsertRecords()
 		{
 			var db = OpenDB(databaseName);
@@ -75,7 +73,6 @@ namespace Community.CsharpSQLite.UnitTests
 			db.CloseDatabase();
 		}
 
-		[Fact]
 		public void Insert_1000()
 		{
 			for(var i = 0; i < 1000; i++)

@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{B83741E9-7012-491E-B15D-3B083506A143}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/System.Data.SQLite.UnitTests/Stress.cs">
+    <Files>
+      <File FileName="Tests/SQLiteClientTests/SQLiteClientTestDriver.cs" Line="1070" Column="24" />
+      <File FileName="Tests/SQLiteClientTests/SQLiteToolsTesteDrive.cs" Line="31" Column="22" />
+      <File FileName="System.Data.SQLite.Benchmark/Classes/SQLiteDatabase.cs" Line="1" Column="1" />
+      <File FileName="System.Data.SQLite.Benchmark/Classes/SQLiteVdbe.cs" Line="1" Column="1" />
+      <File FileName="Tests/System.Data.SQLite.UnitTests/Stress.cs" Line="2" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CsharpSQLite" expanded="True">
+            <Node name="Tests" expanded="True">
+              <Node name="System.Data.SQLite.UnitTests" expanded="True">
+                <Node name="References" expanded="True" />
+                <Node name="Classes" expanded="True" />
+                <Node name="Stress.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Tests.SQLiteClientTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
