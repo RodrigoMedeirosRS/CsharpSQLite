@@ -104,5 +104,8 @@ Global
 		$4.inheritsSet = null
 		$4.scope = text/x-changelog
 		$0.StandardHeader = $5
+		$0.DotNetNamingPolicy = $6
+		$6.DirectoryNamespaceAssociation = PrefixedHierarchical
+		version = 1.0
 	EndGlobalSection
 EndGlobal
