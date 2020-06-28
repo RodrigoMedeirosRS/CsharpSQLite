@@ -232,6 +232,6 @@ Thank you to the Godot Engine, Mono and .NET community for embracing this projec
 
 ## Help Me!
 
-If you like the code, click here and give a help to ear a few bucks!
+If you like the code, clik on link bellow and buy me a coffe :)
 
-https://www.swagbucks.com/lp-savings-button?cmp=695&cxid=swagbuttonref&rb=74850693&extRefCmp=1&extRb=74850693
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FPQKAA8A9KYAJ&source=url
