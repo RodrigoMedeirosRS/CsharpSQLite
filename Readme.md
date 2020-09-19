@@ -1,6 +1,6 @@
 # SQLiteSharp-NET
 
-SQLiteSharp-NET is a combination of two powerfull libraries, SQLite-Net and CsharpSQLite, it's is a open source library developed to allow Mono and .NET applications to store data in [SQLite 3 databases](http://www.sqlite.org) without any external .dll or .so libraries, providing a better support to [Godot Engine](https://godotengine.org) games.
+SQLiteSharp-NET is a pure C# ORM to SQLite made by a combination of two another powerfull libraries, SQLite-Net and CsharpSQLite, it's is a open source library developed to allow NetFramework, .NetCore and Mono applications to store data in [SQLite 3 databases](http://www.sqlite.org) without any external .dll or .so libraries, providing a better support to [Godot Engine](https://godotengine.org) games.
 
 SQLiteSharp-NET  was designed as a quick and convenient database layer. Its design follows from these *goals*:
 
