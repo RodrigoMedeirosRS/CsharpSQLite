@@ -4,7 +4,7 @@ SQLiteSharp-NET is a combination of two powerfull libraries, SQLite-Net and Csha
 
 SQLiteSharp-NET  was designed as a quick and convenient database layer. Its design follows from these *goals*:
 
-* Very easy to integrate with existing projects and runs on all Godot Engine, Mono and .NET platforms.
+* Very easy to integrate with existing projects and runs on all Godot Engine, .NetFramework, .NetCore and Mono.
   
 * Thin wrapper over SQLite that is fast and efficient. (This library should not be the performance bottleneck of your queries.)
 
@@ -16,7 +16,7 @@ SQLiteSharp-NET  was designed as a quick and convenient database layer. Its desi
 
 ## Source Installation
 
-SQLite-net is all contained into System.Data.SQLite project, to install it into your project you need only copy all files into System.Data.SQLite folder, include System.Data.SQLite.csproj to your solution file and into your project add reference to ystem.Data.SQLite.csproj file.
+SQLite-net is all contained into System.Data.SQLite project, to install it into your project you need only copy all files into System.Data.SQLite.NetStandard folder, include System.Data.SQLite.csproj to your solution file and into your project add reference to ystem.Data.SQLite.csproj file.
 
 ## Please Contribute!
 
